@@ -45,9 +45,11 @@ const myFn = tgpu['~unstable'].computeFn({
 		return;
 	}
 
-	const fragCoord = d.vec2f(px / width, py / height);
+	const fragCoord = d.vec2f(px, py);
+	const resolution = d.vec2f(width, height);
+
 	const ro = d.vec3f(0, 0, 5);
-	const rd = rayDirection(45, fragCoord);
+	const rd = rayDirection(45, fragCoord, resolution);
 
 	let t = d.f32(0);
 	let hit = false;
