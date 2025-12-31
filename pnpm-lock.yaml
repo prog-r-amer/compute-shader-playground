@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@typegpu/sdf':
+        specifier: ^0.9.0
+        version: 0.9.0(typegpu@0.9.0)
       typegpu:
         specifier: ^0.9.0
         version: 0.9.0
@@ -154,6 +157,11 @@ packages:
 
   '@tybys/wasm-util@0.10.1':
     resolution: {integrity: sha512-9tTaPJLSiejZKx+Bmog4uSubteqTvFrVrURwkmHixBo0G4seD0zUxp98E1DzUBJxLQ3NPwXrGKDiVjwx/DpPsg==}
+
+  '@typegpu/sdf@0.9.0':
+    resolution: {integrity: sha512-gCJY7Bbu194GG0BNFfNYemmBVGUg/nQ2LilqJyJ682gUPEsAFUYhURsPKuqi5R++8yd4Bkd753r/t3w5bxG/bQ==}
+    peerDependencies:
+      typegpu: ^0.9.0
 
   '@types/estree@1.0.8':
     resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
@@ -474,6 +482,10 @@ snapshots:
     dependencies:
       tslib: 2.8.1
     optional: true
+
+  '@typegpu/sdf@0.9.0(typegpu@0.9.0)':
+    dependencies:
+      typegpu: 0.9.0
 
   '@types/estree@1.0.8': {}
 
